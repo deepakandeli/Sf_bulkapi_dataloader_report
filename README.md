@@ -9,6 +9,22 @@ This node application retrieves the logs in following format
 - Merged request and result csv file for each batch
 - Merged request and result csv file for all batch
 
+## Installation
+
+### Salesforce Connected App
+
+The app uses Salesforce's Oauth "Client Credential" flow.
+This requires a System administrator creates a connected app which uses client credential setting as per images
+[Note: Client Credentail flow enables connection to Salesforce without the need for Salesforce Username and password]
+
+#### Connected App Screenshot
+- ![Connected App Screenshot](https://d259t2jj6zp7qm.cloudfront.net/images/20230328082158/image-46-1795x1000.png)
+
+#### Client Credentials Flow Screenshot
+- ![Client Credentials Flow Screenshot](https://d259t2jj6zp7qm.cloudfront.net/images/20230328082306/image-48.png)
+
+### Dataload_Files/CREDS_PREPROD.json
+Copy the client Id and client secret generated from the above connected app and update the CREDS_PREPROD.json
 
 ## Run Locally
 
@@ -21,5 +37,5 @@ Install npm package
 Command to run logs related to a job 
 
 ```bash
-  node Dataloader_report_merge.js  --CredFile "CREDS_PREPROD.json" --logfile "./Logs/" --jobId "750F400000ABJeb"
+  node Dataloader_report_merge.js  --CredFile "Dataload_Files/CREDS_PREPROD.json" --logfile "./Logs/" --jobId "750F400000ABJeb"
 ```
