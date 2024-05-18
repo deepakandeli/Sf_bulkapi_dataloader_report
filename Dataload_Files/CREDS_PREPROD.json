@@ -1,0 +1,6 @@
+{
+	"clientId":"<clientId>",
+	"clientSecret":"<clientSecret>",
+	"tokenEndpoint":"https://<sf-instance>.sandbox.my.salesforce.com/services/oauth2/token",
+	"grantType":"client_credentials"
+}
