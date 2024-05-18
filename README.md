@@ -12,14 +12,14 @@ This node application retrieves the logs in following format
 
 ## Run Locally
 
-Clone the project
+Install npm package
 
 ```bash
-  git clone https://github.com/deepakandeli/Sf_bulkapi_dataloader_report.git
+  npm i sf_bulkapi_dataloader_report
 ```
 
 Command to run logs related to a job 
 
 ```bash
-  node WL_dataloader_report_merge.js  --CredFile "CREDS_PREPROD.json" --logfile "./Logs/" --jobId "750F400000ABJeb"
+  node Dataloader_report_merge.js  --CredFile "CREDS_PREPROD.json" --logfile "./Logs/" --jobId "750F400000ABJeb"
 ```
