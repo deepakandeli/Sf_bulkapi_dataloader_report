@@ -1,6 +1,5 @@
 //node WL_dataloader.js --jobId 'jobId' --CredFile SF_PREPROD.json
 const fs = require('fs');
-var sql = require('mssql/msnodesqlv8');
 const jsforce = require('jsforce');
 const https = require('https');
 const querystring = require('querystring');
