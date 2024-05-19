@@ -1,4 +1,3 @@
-//node WL_dataloader.js --jobId 'jobId' --CredFile SF_PREPROD.json
 const fs = require('fs');
 const jsforce = require('jsforce');
 const https = require('https');

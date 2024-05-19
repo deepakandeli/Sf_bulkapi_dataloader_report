@@ -34,8 +34,14 @@ Install npm package
   npm i sf_bulkapi_dataloader_report
 ```
 
-Command to run logs related to a job 
-
+Create a javascript file say 'RetrieveDataLoadLogs.js with the following line
 ```bash
-  node Dataloader_report_merge.js  --CredFile "Dataload_Files/CREDS_PREPROD.json" --logfile "./Logs/" --jobId "750F400000ABJeb"
+const sf_bulkapi_dataloader_report = require('sf_bulkapi_dataloader_report');
+```
+
+
+Create a folder 'logs'
+Command to run logs related to a job
+```bash
+  node RetrieveDataLoadLogs.js --CredFile "CREDS_PREPROD.json" --logfile "./logs/" --jobId "750F400000ABJeb"
 ```
